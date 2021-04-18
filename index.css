@@ -1,0 +1,219 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.grid-container{
+    height: 150vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.8fr 3.5fr;
+    grid-template-rows: 0.2fr;
+}
+
+.container-1{
+    background-color: rgb(116, 44, 44);
+    color: #fff;
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.image{
+    height: 40%;
+    width: 90%;
+    margin: auto;
+    border: 2px solid rgb(204, 105, 105);
+    background-image: url(image.jpg);
+    background-size: cover;
+    background-position: centre;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.contact h3{
+    margin: 20px 0px;
+    
+}
+
+.span{
+    text-decoration: underline;
+}
+
+.contact-group{
+    padding: 5px;
+}
+
+.contact-group a{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+.a{
+    padding-left: 5px;
+}
+
+.contact, .education{
+    border-bottom: 2px solid;
+}
+.education p{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.edu{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.education h3{
+    margin: 10px 0px;
+    text-transform: capitalize;
+}
+
+.education span{
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.education .s{
+    font-size: small;
+}
+
+.content p{
+    margin-top: 15px;
+}
+
+.p{
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.cont li{
+    padding: 5px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+.container-2{
+   background-color:rgba(204, 105, 105, 0.555) ; 
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.head{
+    padding: 50px;
+}
+
+.p1{
+    color: rgb(116, 44, 44);
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.p2{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.p3{
+    font-size: 15px;
+    font-weight: bold
+}
+
+.container-3{
+    padding: 25px;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.experience h2{
+    color:rgb(116, 44, 44) ;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.exp{
+    margin: 20px 0px;
+}
+
+.exp h4{
+    margin-bottom: 5px;
+}
+
+.ex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.exp p{
+    padding: 10px 0px;
+}
+
+.lang h4{
+    color:rgb(116, 44, 44) ;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.lang ul li{
+    padding: 5px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+@media screen and (max-width: 1000px){
+    .grid-container{
+        max-width: 800px;
+        height: 140vh;
+        margin: auto;
+    }
+
+    .image{
+        height: 25%;
+        width: 95%;
+    }
+
+    .experience h2{
+        font-size: 20px
+     }
+
+     .head{
+        padding: 35px;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    .image{
+        height: 15%;
+        width:100%;
+    }
+
+    .experience h2{
+       font-size: 20px
+    }
+
+    .ex h6{
+        font-size: 10px;
+    }
+
+    .head{
+        padding: 25px;
+    }
+    
+}
